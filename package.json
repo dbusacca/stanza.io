@@ -31,7 +31,7 @@
     "iana-hashes": "^1.0.2",
     "jingle": "^3.0.0",
     "jxt": "^3.1.0",
-    "jxt-xmpp": "^3.1.0",
+    "jxt-xmpp": "3.2.2",
     "jxt-xmpp-types": "^3.0.0",
     "lodash.assign": "^3.0.0",
     "lodash.filter": "^3.1.0",
@@ -50,6 +50,10 @@
     "xhr": "^2.0.1",
     "xmpp-jid": "^1.0.0"
   },
+  "resolutions": {
+    "xmpp-constants": "2.4.0"
+  }
+  ,
   "devDependencies": {
     "browserify": "^13.0.0",
     "jshint": "^2.6.3",
@@ -78,7 +82,7 @@
     "url": "https://github.com/otalk/stanza.io.git"
   },
   "scripts": {
-    "build": "make build",
+    "build": "browserify --full-paths --standalone XMPP ./index.js > stanza.bundle.js",
     "test": "make test",
     "lint": "jshint .",
     "validate": "npm ls"
