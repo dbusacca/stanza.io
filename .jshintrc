@@ -2,7 +2,7 @@
   "node": true,
   "nonbsp": true,
   "bitwise": true,
-  "camelcase": true,
+  "camelcase": false,
   "browser": true,
   "curly": true,
   "latedef": true,
